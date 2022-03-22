@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web & Video</title>
+</head>
+<body>
+  <section class="showcase">
+  <header>
+    <h2 class="logo"><img src="./images/LOGO svg.svg" width="300px" height="100px"></h2>
+    <div class="toggle"></div>
+  </header>
+
+  
+  <video src="/images/Pesera.mp4" muted loop autoplay></video>
+  
+  <div class="overlay"></div>
+
+  <div class="text">
+    <h2>Descovering the Video</h2>
+    <h3> film 160 & Web Production</h3>
+    <p>I was walking and thinkig about my work and how I can organize my class materials. Then it ocurred to me to create a website that has everything in one place. This is why I created this web.</p>
+    <a href="#">Explore</a>
+  </div>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mqqft2x_Aa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <ul class="social">
+    <li><a href="https://vimeo.com/688002917" target="_blank"><img src="/images/vimeo-fill.svg" alt=""></a></li>
+    <li><a href="https://www.instagram.com/" target="_blank" ><img src="/images/instagram-fill.svg" alt=""></a></li>
+    <li><a href="https://youtu.be/f86rtIyF4TI" target="_blank" ><img src="/images/youtube.svg" alt=""></a></li>
+  </ul>
+  </section>
+
+<!-- MENU UNFOLDED -->
+  <div class="menu">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+
+      <li><a href="https://docs.google.com/spreadsheets/d/1gHpiZkS85HIQyd28_dCcfmOzaMfiG4KOQE36oUFtBT8/edit#gid=741228164" target="_blank">160 Assignaments</a></li>
+      
+      <li><a href="https://zeyao.online/" target="_blank">Web Production</a></li>
+      
+      <li><a href="https://diegoinnyc.blogspot.com/" target="_blank">Blog</a></li>
+      
+      <li><a href="#">Contact</a></li>
+    
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+
+</body>
+</html>
